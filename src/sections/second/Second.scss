@@ -1,0 +1,31 @@
+@import '../../style/variables/colors';
+@import '../../style/variables/mixin';
+
+.second{
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: $second-background;
+    font-family: 'Poppins', sans-serif;
+}
+
+.second__h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.second-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    padding: 20px;
+    gap: 2rem;
+}
+
+.card{
+    padding: 5px;
+    border: 5px solid $main-button-fire;
+
+    img{
+        width: 100%;
+    }
+}

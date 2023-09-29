@@ -1,0 +1,44 @@
+@import '../../style/variables/colors';
+@import '../../style/variables/mixin';
+
+.testimonials{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: $second-background;
+}
+
+.testimonials__container{
+    padding: 7px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap: 2rem;
+}
+
+.testi__h1{
+    display: flex;
+    justify-content: center;
+    margin-block: 1rem;
+    font-size: 35px;
+}
+
+.test__card{
+    border: 5px solid $main-button-fire;
+    padding: 15px;
+    margin: 1.2rem;
+
+    h2{
+        font-size: 30px;
+    }
+
+    p{
+        margin-top: 2rem;
+    }
+
+    h3{
+        color: $nav-dark;
+        margin-top: 2rem;
+        line-height: 25px;
+    }
+}
